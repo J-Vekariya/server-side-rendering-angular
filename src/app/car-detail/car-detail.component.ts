@@ -33,8 +33,8 @@ export class CarDetailComponent implements OnInit {
       this.state.set(CAR_KEY, this.car)
       this.seo.generateTags({
         title: this.car.name,
-        description: this.car.bio,
-        image: this.car.imgURL
+        description: this.car.description,
+        image: this.car.car_brand.image_url
       });
       console.log(response.data);
       startWith(exists)
