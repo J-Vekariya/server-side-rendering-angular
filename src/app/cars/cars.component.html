@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let car of cars.rows" >
+    <a routerLink="/car/{{car.id}}">
+      <span class="badge">{{car.name}}</span> 
+    </a>
+  </li>
+</ul>
